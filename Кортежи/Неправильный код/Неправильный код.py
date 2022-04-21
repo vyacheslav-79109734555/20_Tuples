@@ -3,7 +3,7 @@ import random
 
 def change(nums):
     nums_l = list(nums)
-    index = random.randint(0, 5)
+    index = random.randint(0, 4)
     print(f'index {index}')
     value = random.randint(100, 1000)
     nums_l[index] = value
