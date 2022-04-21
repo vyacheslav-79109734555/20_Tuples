@@ -7,7 +7,11 @@ def side_full(radius, height):
     return round(sid, 2), round(ful, 2)
 
 
-r = float(input('Введите радиус: '))
-h = float(input('Введите высоту: '))
-side, full = side_full(r, h)
-print(f'Площадь боковой фигуры: {side}\nПолная площадь: {full}')
+while True:
+    try:
+        r = float(input('Введите радиус: '))
+        h = float(input('Введите высоту: '))
+        side, full = side_full(r, h)
+        print(f'Площадь боковой фигуры: {side}\nПолная площадь: {full}')
+    except ValueError:
+        print('Введите корректные данные!')
